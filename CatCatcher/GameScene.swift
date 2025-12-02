@@ -170,7 +170,7 @@ final class GameScene: SKScene, SKPhysicsContactDelegate {
             spawnItem()
         }
 
-        enumerateChildNodes(withName: "//") { node, _ in
+        enumerateChildNodes(withName: "//*") { node, _ in
             if node.position.y < -200 { node.removeFromParent() }
         }
     }
